@@ -8,5 +8,6 @@ docker build \
 docker run \
   -it \
   -v "$(pwd):$WORKING_DIRECTORY" \
+  -v "/etc/ssl/certs:/etc/ssl/certs:ro" \
   -w "$WORKING_DIRECTORY" \
   --rm "argon:latest"

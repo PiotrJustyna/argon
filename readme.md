@@ -20,4 +20,4 @@ minimal f# development environment
 
 ## markdown
 
-`render-docs.sh`
+`./render-docs.sh`
