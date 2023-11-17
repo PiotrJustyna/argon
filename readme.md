@@ -5,7 +5,8 @@ minimal f# development environment
 * `arm64v8 alpine 3.18`
 * `.net 8.0`
 * `oh my zsh`
-* `pandoc`
+* `pandoc` + `mermaid`
+* `non-root user`
 
 ![](./img/demo.png)
 

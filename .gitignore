@@ -1,4 +1,6 @@
-.DS_Store
 obj/
 bin/
 document-preview/
+
+.DS_Store
+mermaid-filter.err

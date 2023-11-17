@@ -6,4 +6,4 @@ mkdir "$DOCUMENT_PREVIEW"
 
 cp -r "./img" "./$DOCUMENT_PREVIEW"
 
-pandoc "./readme.md" -o "./$DOCUMENT_PREVIEW/readme.html"
+pandoc -F mermaid-filter -o "./$DOCUMENT_PREVIEW/readme.html" "./readme.md"
