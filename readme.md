@@ -5,8 +5,9 @@ minimal f# development environment
 * `arm64v8 alpine 3.18`
 * `.net 8.0`
 * `oh my zsh`
+* `pandoc`
 
-![demo](./img/demo.png)
+![](./img/demo.png)
 
 ## start
 
@@ -15,3 +16,7 @@ minimal f# development environment
 ## stop
 
 `exit`
+
+## markdown
+
+`render-docs.sh`
