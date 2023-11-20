@@ -1,4 +1,7 @@
+#!/bin/zsh
+
 WORKING_DIRECTORY="/home/code/argon"
+CERTIFICATE_DIRECTORY="$HOME/.ssh/"
 
 docker build \
   -t "argon:latest" \
@@ -8,6 +11,6 @@ docker build \
 docker run \
   -it \
   -v "$(pwd):$WORKING_DIRECTORY" \
-  -v "/etc/ssl/certs:/etc/ssl/certs:ro" \
+  -v "$CERTIFICATE_DIRECTORY:/root/.ssh:ro" \
   -w "$WORKING_DIRECTORY" \
   --rm "argon:latest"

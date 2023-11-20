@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 DOCUMENT_PREVIEW="document-preview"
 
 rm -rf "$DOCUMENT_PREVIEW"
