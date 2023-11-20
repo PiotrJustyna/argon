@@ -18,9 +18,11 @@ minimal f# development environment
   * and removed from the equation
 * reuse host's ssh keys
 
+---
+
 \**lean* - minimal number of unused components
 
-\**quiet* - minimal number of errors
+\*\**quiet* - minimal number of errors
 
 ## host requirements
 
