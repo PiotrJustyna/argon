@@ -20,9 +20,8 @@ minimal f# development environment
 
 ---
 
-\**lean* - minimal number of unused components
-
-\*\**quiet* - minimal number of errors
+* \**lean* - minimal number of unused components
+* \*\**quiet* - minimal number of errors
 
 ## host requirements
 
