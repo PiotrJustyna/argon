@@ -5,7 +5,9 @@ minimal f# development environment
 * `arm64v8 alpine 3.18`
 * `zsh` + `oh my zsh`
 * `.net 8.0`
-* `pandoc` + `mermaid`
+* `pandoc`
+  * `mermaid`
+  * `pdflatex` (via `texlive`)
 
 ![](./img/demo.png)
 

@@ -8,4 +8,4 @@ mkdir "$DOCUMENT_PREVIEW"
 
 cp -r "./img" "./$DOCUMENT_PREVIEW"
 
-pandoc -F mermaid-filter -o "./$DOCUMENT_PREVIEW/readme.html" "./readme.md"
+pandoc -F mermaid-filter -o "./$DOCUMENT_PREVIEW/readme.pdf" "./readme.md"
