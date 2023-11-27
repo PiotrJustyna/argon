@@ -1,13 +1,29 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0.100-alpine3.18-arm64v8
 
+ARG USER_NAME=argon
+
 RUN apk update && \
-  apk add openssh zsh pandoc npm chromium texlive && \
-  npm install --global mermaid-filter
+  apk \
+    add \
+    openssh \
+    zsh \
+    pandoc \
+    npm \
+    chromium \
+    texlive \
+  && \
+  npm \
+    install \
+    --global mermaid-filter
 
-RUN addgroup argon-development-group && \
-  adduser --disabled-password argon --ingroup argon-development-group
+RUN \
+  addgroup argon-development-group \
+  && \
+  adduser \
+    --disabled-password $USER_NAME \
+    --ingroup argon-development-group
 
-USER argon
+USER "$USER_NAME"
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

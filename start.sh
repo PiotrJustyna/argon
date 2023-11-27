@@ -1,11 +1,12 @@
 #!/bin/zsh
 
-USER="argon"
-HOME_DIRECTORY="/home/$USER"
+USER_NAME="argon"
+HOME_DIRECTORY="/home/$USER_NAME"
 WORKING_DIRECTORY="$HOME_DIRECTORY/code"
 CERTIFICATE_DIRECTORY="$HOME/.ssh/"
 
 docker build \
+  --build-arg "USER_NAME=$USER_NAME" \
   -t "argon:latest" \
   -f "dockerfile" \
   . \
