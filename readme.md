@@ -5,6 +5,7 @@ minimal f# development environment
 * `arm64v8 alpine 3.18`
 * `zsh` + `oh my zsh`
 * `.net 8.0`
+  * `fantomas`
 * `pandoc`
   * `mermaid`
   * `pdflatex` (via `texlive`)
