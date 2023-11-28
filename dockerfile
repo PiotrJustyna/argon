@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0.100-alpine3.18-arm64v8
+FROM mcr.microsoft.com/dotnet/sdk:8.0.100-1-alpine3.18
 
 ARG USER_NAME=argon
 

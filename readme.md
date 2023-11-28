@@ -2,7 +2,9 @@
 
 minimal f# development environment
 
-* `arm64v8 alpine 3.18`
+* `alpine 3.18`
+  * `arm64`
+  * `amd64`
 * `zsh` + `oh my zsh`
 * `.net 8.0`
   * `fantomas`
@@ -28,7 +30,6 @@ minimal f# development environment
 
 ## host requirements
 
-* arm64v8
 * docker
 * zsh
 
