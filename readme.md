@@ -44,3 +44,18 @@ minimal f# development environment
 ## markdown
 
 `./render-docs.sh`
+
+## customisation
+
+### `ARG`
+
+| name | description|
+| --- | --- |
+| `$USER_NAME` | controls the name of the default non-root account controlling the development environment |
+
+### volumes
+
+| identifier | description|
+| --- | --- |
+| `$(pwd)` | current host directory which becomes container's working directory |
+| `$CERTIFICATE_DIRECTORY` | host's `.ssh` directory |
