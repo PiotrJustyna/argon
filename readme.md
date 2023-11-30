@@ -12,7 +12,7 @@ minimal f# development environment
   * `mermaid`
   * `pdflatex` (via `texlive`)
 
-![](./img/demo.png)
+https://github.com/PiotrJustyna/argon/assets/6170837/bdef36a5-f919-4ae5-b03d-43970c682973
 
 ## manifest
 
