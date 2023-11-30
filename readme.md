@@ -41,10 +41,6 @@ minimal f# development environment
 
 `exit`
 
-## markdown
-
-`./render-docs.sh`
-
 ## customisation
 
 ### `ARG`
