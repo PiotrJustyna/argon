@@ -14,13 +14,13 @@ minimal f# development environment
 
 https://github.com/PiotrJustyna/argon/assets/6170837/bdef36a5-f919-4ae5-b03d-43970c682973
 
-## manifest
+## manifesto
 
 * \**lean* and \*\**quiet* development environment
 * take your development environment anywhere
-* low expectations from yout text editor:
-  * keep your text editor vanilla
-  * and removed from the equation
+* low expectations from your text editor - keep it:
+  * vanilla
+  * removed from the equation
 * reuse host's ssh keys
 
 ---
