@@ -1,6 +1,10 @@
 # argon
 
-minimal f# development environment
+Minimal f# development environment.
+
+Build and run your code in a container exposing an interactive bash shell. It looks like your regular shell, but everything is installed and running in a docker container. When you're done, simply `exit` argon shell to get back to your regular shell.
+
+## features
 
 * `alpine 3.18`
   * `arm64`
@@ -11,6 +15,10 @@ minimal f# development environment
 * `pandoc`
   * `mermaid`
   * `pdflatex` (via `texlive`)
+
+![](./img/demo.png)
+
+## demo
 
 https://github.com/PiotrJustyna/argon/assets/6170837/bdef36a5-f919-4ae5-b03d-43970c682973
 
