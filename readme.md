@@ -16,7 +16,7 @@ Build and run your code in a container exposing an interactive bash shell. It lo
   * `mermaid`
   * `pdflatex` (via `texlive`)
 
-![](./img/demo.png)
+![](./img/2023-12-05-demo.png)
 
 ## manifesto
 
