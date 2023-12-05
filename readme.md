@@ -63,3 +63,7 @@ https://github.com/PiotrJustyna/argon/assets/6170837/bdef36a5-f919-4ae5-b03d-439
 | --- | --- |
 | `$(pwd)` | current host directory which becomes container's working directory |
 | `$CERTIFICATE_DIRECTORY` | host's `.ssh` directory |
+
+### resources
+
+* [text to ascii art generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)

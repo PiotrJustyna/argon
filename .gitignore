@@ -5,3 +5,4 @@ document-preview/
 .DS_Store
 mermaid-filter.err
 render-docs.sh
+publish-image.sh
