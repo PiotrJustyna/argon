@@ -18,10 +18,6 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 
 ![](./img/demo.png)
 
-## demo
-
-https://github.com/PiotrJustyna/argon/assets/6170837/bdef36a5-f919-4ae5-b03d-43970c682973
-
 ## manifesto
 
 * \**lean* and \*\**quiet* development environment
