@@ -4,6 +4,17 @@ Minimal f# development environment.
 
 Build and run your code in a container exposing an interactive bash shell. It looks like your regular shell, but everything is installed and running in a docker container. When you're done, simply `exit` argon shell to get back to your regular shell.
 
+- [argon](#argon)
+  * [features](#features)
+  * [manifesto](#manifesto)
+  * [host requirements](#host-requirements)
+  * [start](#start)
+  * [stop](#stop)
+  * [customisation](#customisation)
+    + [`ARG`](#-arg-)
+    + [volumes](#volumes)
+    + [resources](#resources)
+
 ## features
 
 * `alpine 3.18`
@@ -57,9 +68,8 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 
 | identifier | description|
 | --- | --- |
-| `$(pwd)` | current host directory which becomes container's working directory |
 | `$CERTIFICATE_DIRECTORY` | host's `.ssh` directory |
 
-### resources
+## resources
 
 * [text to ascii art generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
