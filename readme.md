@@ -13,7 +13,9 @@ Build and run your code in a container exposing an interactive bash shell. It lo
   * [customisation](#customisation)
     + [`ARG`](#-arg-)
     + [volumes](#volumes)
-    + [resources](#resources)
+  * [examples](#examples)
+  * [resources](#resources)
+
 
 ## features
 
@@ -69,6 +71,10 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 | identifier | description|
 | --- | --- |
 | `$CERTIFICATE_DIRECTORY` | host's `.ssh` directory |
+
+## examples
+
+[readme](./examples/readme.md)
 
 ## resources
 

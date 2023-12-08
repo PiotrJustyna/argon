@@ -2,7 +2,6 @@
 
 - [examples](#examples)
   * [terminal](#terminal)
-    + [usage](#usage)
 
 ## terminal
 
