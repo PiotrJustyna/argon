@@ -76,7 +76,7 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 
 You can either:
 
-* clone this repository and simply start building your projects inside it. please see [readme](./examples/readme.md) for examples.
+* clone this repository and simply start building your projects inside it. please see [readme](./examples/) for examples.
 * or you can use argon as a base image for other, custom development environments
 
 ## resources
