@@ -5,7 +5,7 @@
 
 ## terminal
 
-Simple "hello, world!" console application. Do nuget dependencies, no external containers. To use:
+Simple "hello, world!" console application. No nuget dependencies, no external containers. To use:
 
 * `dotnet build`
 * `dotnet run`
