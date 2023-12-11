@@ -30,7 +30,7 @@ Build and run your code in a container exposing an interactive bash shell. It lo
   * `pdflatex` (via `texlive`)
   * `marp`
 
-![](./img/2023-12-05-demo.png)
+![](./img/2023-12-11-demo.png)
 
 ## manifesto
 
