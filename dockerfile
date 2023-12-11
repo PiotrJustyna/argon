@@ -13,8 +13,9 @@ RUN apk update && \
     texlive \
   && \
   npm \
-    install \
-    --global mermaid-filter
+    install --global \
+    mermaid-filter \
+    @marp-team/marp-cli
 
 RUN \
   addgroup argon-development-group \

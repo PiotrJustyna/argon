@@ -1,21 +1,21 @@
-# argon
-
-Minimal f# development environment.
-
-Build and run your code in a container exposing an interactive bash shell. It looks like your regular shell, but everything is installed and running in a docker container. When you're done, simply `exit` argon shell to get back to your regular shell.
-
 - [argon](#argon)
   * [features](#features)
   * [manifesto](#manifesto)
   * [host requirements](#host-requirements)
-  * [start](#start)
-  * [stop](#stop)
-  * [customisation](#customisation)
-    + [`ARG`](#-arg-)
-    + [volumes](#volumes)
+  * [how to](#how-to)
+    + [start](#start)
+    + [stop](#stop)
+    + [customisation](#customisation)
+      - [`ARG`](#-arg-)
+      - [volumes](#volumes)
   * [examples](#examples)
   * [resources](#resources)
 
+# argon
+
+Minimal dotnet development environment.
+
+Build and run your code in a container exposing an interactive bash shell. It looks like your regular shell, but everything is installed and running in a docker container. When you're done, simply `exit` argon shell to get back to your regular shell.
 
 ## features
 
@@ -24,10 +24,11 @@ Build and run your code in a container exposing an interactive bash shell. It lo
   * `amd64`
 * `zsh` + `oh my zsh`
 * `.net 8.0`
-  * `fantomas`
-* `pandoc`
+* `markdwn`
+  * `pandoc`
   * `mermaid`
   * `pdflatex` (via `texlive`)
+  * `marp`
 
 ![](./img/2023-12-05-demo.png)
 
@@ -50,23 +51,25 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 * docker
 * zsh
 
-## start
+## how to
+
+### start
 
 `./start.sh`
 
-## stop
+### stop
 
 `exit`
 
-## customisation
+### customisation
 
-### `ARG`
+#### `ARG`
 
 | name | description|
 | --- | --- |
 | `$USER_NAME` | controls the name of the default non-root account controlling the development environment |
 
-### volumes
+#### volumes
 
 | identifier | description|
 | --- | --- |
@@ -74,11 +77,9 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 
 ## examples
 
-You can either:
-
-* clone this repository and simply start building your projects inside it. please see [readme](./examples/) for examples.
-* or you can use argon as a base image for other, custom development environments
+See this repository: https://github.com/PiotrJustyna/argon-examples
 
 ## resources
 
 * [text to ascii art generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+* [github wiki toc generator](https://ecotrust-canada.github.io/markdown-toc/)
