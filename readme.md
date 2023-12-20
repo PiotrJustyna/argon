@@ -65,15 +65,13 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 
 #### `ARG`
 
-| name | description|
-| --- | --- |
-| `$USER_NAME` | controls the name of the default non-root account controlling the development environment |
+* **`$USER_NAME`** - controls the name of the default account controlling the development environment. Possible values:
+  * **root** - default value, **root** will be the default user acount
+  * **[any other value]** - will result in creating **argon-development-group** group and a non-root default member account named **[any other value]**
 
 #### volumes
 
-| identifier | description|
-| --- | --- |
-| `$CERTIFICATE_DIRECTORY` | host's `.ssh` directory |
+* **`$CERTIFICATE_DIRECTORY`** - host's `.ssh` directory
 
 ## examples
 

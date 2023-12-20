@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0.100-1-alpine3.18
 
-ARG USER_NAME=argon
+ARG USER_NAME=root
 
 RUN apk update && \
   apk \
@@ -18,11 +18,13 @@ RUN apk update && \
     @marp-team/marp-cli
 
 RUN \
+  if [ "$USER_NAME" != "root" ]; then \
   addgroup argon-development-group \
   && \
   adduser \
     --disabled-password $USER_NAME \
-    --ingroup argon-development-group
+    --ingroup argon-development-group; \
+  fi
 
 USER "$USER_NAME"
 
