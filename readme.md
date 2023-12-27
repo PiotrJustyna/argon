@@ -21,7 +21,7 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 
 * `alpine 3.18` base
 * `zsh` + `oh my zsh`
-* `.net 8.0 sdk` as an `apk` package (earlier versions of argon used the microsoft .net 8.0 sdk alpine base image which came with dotnet pre-installed)
+* `.net 7.0 sdk` as an `apk` package (earlier versions of argon used the microsoft .net 8.0 sdk alpine base image which came with dotnet pre-installed)
 * `markdwn`
   * `pandoc`
   * `mermaid`
