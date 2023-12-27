@@ -1,56 +1,35 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0.100-1-alpine3.18
+FROM alpine:3.18.0
 
 ARG USER_NAME=root
 
-RUN apk update && \
-  apk \
-    add \
+RUN \
+  apk update \
+  && \
+  apk add \
+    git \
     openssh \
     zsh \
     pandoc \
     npm \
     chromium \
     texlive \
+    dotnet7-sdk \
+    curl \
   && \
-  npm \
-    install --global \
+  npm install --global \
     mermaid-filter \
-    @marp-team/marp-cli
-
-RUN \
-  if [ "$USER_NAME" != "root" ]; then \
-  addgroup argon-development-group \
+    @marp-team/marp-cli \
   && \
-  adduser \
-    --disabled-password $USER_NAME \
-    --ingroup argon-development-group; \
+  if [ "$USER_NAME" != "root" ]; then \
+    addgroup argon-development-group \
+    && \
+    adduser \
+      --disabled-password "$USER_NAME" \
+      --ingroup argon-development-group; \
   fi
 
 USER "$USER_NAME"
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-RUN echo "          _____                    _____                    _____                   _______                   _____          ";
-RUN echo "         /\\    \\                  /\\    \\                  /\\    \\                 /::\\    \\                 /\\    \\         ";
-RUN echo "        /::\\    \\                /::\\    \\                /::\\    \\               /::::\\    \\               /::\\____\\        ";
-RUN echo "       /::::\\    \\              /::::\\    \\              /::::\\    \\             /::::::\\    \\             /::::|   |        ";
-RUN echo "      /::::::\\    \\            /::::::\\    \\            /::::::\\    \\           /::::::::\\    \\           /:::::|   |        ";
-RUN echo "     /:::/\\:::\\    \\          /:::/\\:::\\    \\          /:::/\\:::\\    \\         /:::/~~\\:::\\    \\         /::::::|   |        ";
-RUN echo "    /:::/__\\:::\\    \\        /:::/__\\:::\\    \\        /:::/  \\:::\\    \\       /:::/    \\:::\\    \\       /:::/|::|   |        ";
-RUN echo "   /::::\\   \\:::\\    \\      /::::\\   \\:::\\    \\      /:::/    \\:::\\    \\     /:::/    / \\:::\\    \\     /:::/ |::|   |        ";
-RUN echo "  /::::::\\   \\:::\\    \\    /::::::\\   \\:::\\    \\    /:::/    / \\:::\\    \\   /:::/____/   \\:::\\____\\   /:::/  |::|   | _____  ";
-RUN echo " /:::/\\:::\\   \\:::\\    \\  /:::/\\:::\\   \\:::\\____\\  /:::/    /   \\:::\\ ___\\ |:::|    |     |:::|    | /:::/   |::|   |/\\    \\ ";
-RUN echo "/:::/  \\:::\\   \\:::\\____\\/:::/  \\:::\\   \\:::|    |/:::/____/  ___\\:::|    ||:::|____|     |:::|    |/:: /    |::|   /::\\____\\";
-RUN echo "\\::/    \\:::\\  /:::/    /\\::/   |::::\\  /:::|____|\\:::\\    \\ /\\  /:::|____| \\:::\\    \\   /:::/    / \\::/    /|::|  /:::/    /";
-RUN echo " \\/____/ \\:::\\/:::/    /  \\/____|:::::\\/:::/    /  \\:::\\    /::\\ \\::/    /   \\:::\\    \\ /:::/    /   \\/____/ |::| /:::/    / ";
-RUN echo "          \\::::::/    /         |:::::::::/    /    \\:::\\   \\:::\\ \\/____/     \\:::\\    /:::/    /            |::|/:::/    /  ";
-RUN echo "           \\::::/    /          |::|\\::::/    /      \\:::\\   \\:::\\____\\        \\:::\\__/:::/    /             |::::::/    /   ";
-RUN echo "           /:::/    /           |::| \\::/____/        \\:::\\  /:::/    /         \\::::::::/    /              |:::::/    /    ";
-RUN echo "          /:::/    /            |::|  ~|               \\:::\\/:::/    /           \\::::::/    /               |::::/    /     ";
-RUN echo "         /:::/    /             |::|   |                \\::::::/    /             \\::::/    /                /:::/    /      ";
-RUN echo "        /:::/    /              \\::|   |                 \\::::/    /               \\::/____/                /:::/    /       ";
-RUN echo "        \\::/    /                \\:|   |                  \\::/____/                                         \\::/    /        ";
-RUN echo "         \\/____/                  \\|___|                                                                     \\/____/         ";
-RUN echo "                                                                                                                             ";
 
 CMD [ "/bin/zsh" ]
