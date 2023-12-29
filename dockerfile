@@ -1,4 +1,4 @@
-FROM alpine:3.18.0
+FROM alpine:3.19.0
 
 ARG USER_NAME=root
 
