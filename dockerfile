@@ -30,6 +30,8 @@ RUN \
 
 USER "$USER_NAME"
 
-RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
+  && \
+  git config --global --add safe.directory "/tmp/code"
 
 CMD [ "/bin/zsh" ]
