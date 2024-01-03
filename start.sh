@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-USER_NAME="root"
+USER_NAME="argon"
 HOME_DIRECTORY="/home/$USER_NAME"
 # 2024-01-03 PJ:
 # --------------
