@@ -8,7 +8,7 @@ docker build \
   -t "argon:latest" \
   -f "dockerfile" \
   . \
-  && \
+&& \
 docker run \
   -it \
   -v "$(pwd):/tmp/code" \
