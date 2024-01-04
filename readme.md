@@ -69,7 +69,7 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 
 #### volumes
 
-* **`$CERTIFICATE_DIRECTORY`** - host's `.ssh` directory
+* **`$CERTIFICATE_DIRECTORY`** - host's `.ssh` directory. This is useful for upstream git operations.
 
 ## examples
 
