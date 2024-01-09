@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-USER_NAME="argon"
+USER_NAME="root"
 CERTIFICATE_DIRECTORY="$HOME/.ssh/"
 
 docker build \
