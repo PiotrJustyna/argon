@@ -47,7 +47,6 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 ## host requirements
 
 * docker
-* zsh
 
 ## how to
 

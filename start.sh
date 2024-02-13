@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 USER_NAME="root"
 CERTIFICATE_DIRECTORY="$HOME/.ssh/"
@@ -15,3 +15,4 @@ docker run \
   -v "$CERTIFICATE_DIRECTORY:/home/$USER_NAME/.ssh:ro" \
   -v "$CERTIFICATE_DIRECTORY:/root/.ssh:ro" \
   --rm "argon:latest"
+  
