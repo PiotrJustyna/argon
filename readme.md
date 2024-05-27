@@ -16,7 +16,7 @@
 
 Minimal development environment.
 
-Build and run your code in a container exposing an interactive bash shell. It looks like your regular shell, but everything is installed and running in a docker container. When you're done, simply `exit` argon shell to get back to your regular shell.
+Build and run your code in a container exposing an interactive zsh shell. It looks like your regular shell, but everything is installed and running in a docker container. When you're done, simply `exit` argon shell to get back to your regular shell.
 
 ## features
 
