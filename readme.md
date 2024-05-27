@@ -21,6 +21,7 @@ Build and run your code in a container exposing an interactive zsh shell. It loo
 ## features
 
 * arm64
+
 * amd64
 
 ### argon
@@ -28,11 +29,17 @@ Build and run your code in a container exposing an interactive zsh shell. It loo
 A minimal, base version of argon - just basic documentation-writing tools.
 
 * `alpine 3.20` base
+
 * `zsh` + `oh my zsh`
+
 * `markdown`
+
   * `pandoc`
+
   * `mermaid`
+
   * `pdflatex` (via `texlive`)
+
   * `marp`
 
 ### dotnet
@@ -40,6 +47,7 @@ A minimal, base version of argon - just basic documentation-writing tools.
 Dotnet development support.
 
 * core argon
+
 * `.net 8.0 sdk` as an `apk` package
 
 ![](./img/2024-01-09-demo.png)
@@ -47,15 +55,21 @@ Dotnet development support.
 ## manifesto
 
 * \**lean* and \*\**quiet* development environment
+
 * take your development environment anywhere
+
 * low expectations from your text editor - keep it:
+
   * vanilla
+
   * removed from the equation
+
 * reuse host's ssh keys
 
 ---
 
 * \**lean* - minimal number of unused components
+
 * \*\**quiet* - minimal number of errors
 
 ## host requirements
@@ -66,7 +80,9 @@ Dotnet development support.
 
 ### start
 
-`./host.sh`
+* `./argon/host.sh` - core argon
+
+* `./argon-dotnet/host.sh` - core argon + dotnet 8 sdk
 
 ### stop
 
@@ -77,7 +93,9 @@ Dotnet development support.
 #### `ARG`
 
 * **`$USER_NAME`** - controls the name of the default account controlling the development environment. Possible values:
+
   * **root** - default value, **root** will be the default user acount
+
   * **[any other value]** - will result in creating **argon-development-group** group and a non-root default member account named **[any other value]**
 
 #### volumes
@@ -87,4 +105,5 @@ Dotnet development support.
 ## resources
 
 * [text to ascii art generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+
 * [github wiki toc generator](https://ecotrust-canada.github.io/markdown-toc/)
