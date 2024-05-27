@@ -1,7 +1,7 @@
 - [argon](#argon)
   - [features](#features)
     - [argon](#argon-1)
-    - [dotnet - `dockerfile-dotnet`](#dotnet---dockerfile-dotnet)
+    - [dotnet](#dotnet)
   - [manifesto](#manifesto)
   - [host requirements](#host-requirements)
   - [how to](#how-to)
@@ -35,7 +35,7 @@ A minimal, base version of argon - just basic documentation-writing tools.
   * `pdflatex` (via `texlive`)
   * `marp`
 
-### dotnet - `dockerfile-dotnet`
+### dotnet
 
 Dotnet development support.
 
