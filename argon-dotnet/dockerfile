@@ -1,4 +1,4 @@
-FROM alpine:3.19.0
+FROM alpine:3.20.0
 
 ARG USER_NAME=root
 
@@ -13,7 +13,7 @@ RUN \
     npm \
     chromium \
     texlive \
-    dotnet7-sdk \
+    dotnet8-sdk \
     curl \
   && \
   npm install --global \

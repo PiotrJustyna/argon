@@ -1,32 +1,46 @@
 - [argon](#argon)
-  * [features](#features)
-  * [manifesto](#manifesto)
-  * [host requirements](#host-requirements)
-  * [how to](#how-to)
-    + [start](#start)
-    + [stop](#stop)
-    + [customisation](#customisation)
-      - [`ARG`](#-arg-)
+  - [features](#features)
+    - [argon](#argon-1)
+    - [dotnet - `dockerfile-dotnet`](#dotnet---dockerfile-dotnet)
+  - [manifesto](#manifesto)
+  - [host requirements](#host-requirements)
+  - [how to](#how-to)
+    - [start](#start)
+    - [stop](#stop)
+    - [customisation](#customisation)
+      - [`ARG`](#arg)
       - [volumes](#volumes)
-  * [examples](#examples)
-  * [resources](#resources)
+  - [resources](#resources)
 
 # argon
 
-Minimal dotnet development environment.
+Minimal development environment.
 
 Build and run your code in a container exposing an interactive bash shell. It looks like your regular shell, but everything is installed and running in a docker container. When you're done, simply `exit` argon shell to get back to your regular shell.
 
 ## features
 
-* `alpine 3.19` base
+* arm64
+* amd64
+
+### argon
+
+A minimal, base version of argon - just basic documentation-writing tools.
+
+* `alpine 3.20` base
 * `zsh` + `oh my zsh`
-* `.net 7.0 sdk` as an `apk` package (earlier versions of argon used the microsoft .net 8.0 sdk alpine base image which came with dotnet pre-installed)
 * `markdwn`
   * `pandoc`
   * `mermaid`
   * `pdflatex` (via `texlive`)
   * `marp`
+
+### dotnet - `dockerfile-dotnet`
+
+Dotnet development support.
+
+* core argon
+* `.net 8.0 sdk` as an `apk` package
 
 ![](./img/2024-01-09-demo.png)
 
@@ -52,7 +66,7 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 
 ### start
 
-`./start.sh`
+`./host.sh`
 
 ### stop
 
@@ -69,10 +83,6 @@ Build and run your code in a container exposing an interactive bash shell. It lo
 #### volumes
 
 * **`$CERTIFICATE_DIRECTORY`** - host's `.ssh` directory. This is useful for upstream git operations.
-
-## examples
-
-See this repository: https://github.com/PiotrJustyna/argon-examples
 
 ## resources
 
