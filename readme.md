@@ -29,7 +29,7 @@ A minimal, base version of argon - just basic documentation-writing tools.
 
 * `alpine 3.20` base
 * `zsh` + `oh my zsh`
-* `markdwn`
+* `markdown`
   * `pandoc`
   * `mermaid`
   * `pdflatex` (via `texlive`)
