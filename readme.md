@@ -24,13 +24,25 @@ Build and run your code in a container exposing an interactive zsh shell. It loo
 
 * amd64
 
-### argon
+### argon-micro
 
-A minimal, base version of argon - just basic documentation-writing tools.
+Only core features of base argon:
 
-* `alpine 3.20` base
+* `alpine 3.20.2` base
 
 * `zsh` + `oh my zsh`
+
+* `git`
+
+* `openssh`
+
+* `curl`
+
+### argon
+
+A more fleshed out base version of argon - just basic documentation-writing tools.
+
+* argon-micro
 
 * `markdown`
 
@@ -46,7 +58,7 @@ A minimal, base version of argon - just basic documentation-writing tools.
 
 Dotnet development support.
 
-* core argon
+* argon
 
 * `.net 8.0 sdk` as an `apk` package
 

@@ -9,15 +9,7 @@ RUN \
     git \
     openssh \
     zsh \
-    pandoc \
-    npm \
-    chromium \
-    texlive \
     curl \
-  && \
-  npm install --global \
-    mermaid-filter \
-    @marp-team/marp-cli \
   && \
   if [ "$USER_NAME" != "root" ]; then \
     addgroup argon-development-group \

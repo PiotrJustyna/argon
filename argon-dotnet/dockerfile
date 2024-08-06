@@ -1,4 +1,4 @@
-FROM alpine:3.20.0
+FROM alpine:3.20.2
 
 ARG USER_NAME=root
 
@@ -34,6 +34,8 @@ WORKDIR "/tmp/code"
 
 RUN git config --global --add safe.directory "." \
   && \
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
+  && \
+  echo "PROMPT='%F{green}%*UTC%f %F{cyan}%n%f %F{magenta}%~%f $ '" >> ~/.zshrc
 
 CMD [ "/bin/zsh" ]
