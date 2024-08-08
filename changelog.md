@@ -18,6 +18,7 @@ In this change I'm introducing argon micro - yet another extraction of only crit
 ### Changed
 
 - base alpine is now 3.20.2 (used to be 3.20)
+- new prompt
 
 ### Removed
 
