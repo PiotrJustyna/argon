@@ -1,5 +1,6 @@
 - [argon](#argon)
   - [features](#features)
+    - [argon-micro](#argon-micro)
     - [argon](#argon-1)
     - [dotnet](#dotnet)
   - [manifesto](#manifesto)
