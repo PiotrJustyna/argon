@@ -21,9 +21,13 @@ Build and run your code in a container exposing an interactive zsh shell. It loo
 
 ## features
 
+Argon supports two types of cpu architectures:
+
 * arm64
 
 * amd64
+
+![](./img/argon-features.svg)
 
 ### argon-micro
 
@@ -38,6 +42,14 @@ Only core features of base argon:
 * `openssh`
 
 * `curl`
+
+### argon-dotnet-micro
+
+Dotnet development support.
+
+* argon-micro
+
+* `.net 8.0 sdk` as an `apk` package
 
 ### argon
 
@@ -93,9 +105,9 @@ Dotnet development support.
 
 ### start
 
-* `./argon/host.sh` - core argon
+* `./[argon type here*]/host.sh` - starts the development environment
 
-* `./argon-dotnet/host.sh` - core argon + dotnet 8 sdk
+\**where argon type is argon micro, argon, argon-dotnet, etc...*
 
 ### stop
 
