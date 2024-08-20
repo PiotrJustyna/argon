@@ -1,8 +1,9 @@
 - [argon](#argon)
   - [features](#features)
     - [argon-micro](#argon-micro)
+    - [argon-dotnet-micro](#argon-dotnet-micro)
     - [argon](#argon-1)
-    - [dotnet](#dotnet)
+    - [argon-dotnet](#argon-dotnet)
   - [manifesto](#manifesto)
   - [host requirements](#host-requirements)
   - [how to](#how-to)
@@ -67,7 +68,7 @@ A more fleshed out base version of argon - just basic documentation-writing tool
 
   * `marp`
 
-### dotnet
+### argon-dotnet
 
 Dotnet development support.
 
