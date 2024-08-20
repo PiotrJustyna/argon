@@ -2,6 +2,7 @@
   - [features](#features)
     - [argon-micro](#argon-micro)
     - [argon-micro-dotnet](#argon-micro-dotnet)
+    - [argon-micro-terraform](#argon-micro-terraform)
     - [argon](#argon-1)
     - [argon-dotnet](#argon-dotnet)
   - [manifesto](#manifesto)
