@@ -1,7 +1,7 @@
 - [argon](#argon)
   - [features](#features)
     - [argon-micro](#argon-micro)
-    - [argon-dotnet-micro](#argon-dotnet-micro)
+    - [argon-micro-dotnet](#argon-micro-dotnet)
     - [argon](#argon-1)
     - [argon-dotnet](#argon-dotnet)
   - [manifesto](#manifesto)
@@ -44,13 +44,23 @@ Only core features of base argon:
 
 * `curl`
 
-### argon-dotnet-micro
+### argon-micro-dotnet
 
 Dotnet development support.
 
 * argon-micro
 
 * `.net 8.0 sdk` as an `apk` package
+
+### argon-micro-terraform
+
+Terraform + aws development support. This environment comes with a lower base version of alpine as the terraform package is no longer included in alpine 2.19+. Host aws credentials are shared with the development environment container.
+
+* argon-micro
+
+* terraform
+
+* aws cli
 
 ### argon
 
